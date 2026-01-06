@@ -48,7 +48,7 @@ export const metadata: Metadata = {
   manifest: "/site.webmanifest",
   themeColor: "#0B1120",
 
-  /* ===== Icons (FULL FIX) ===== */
+  /* ===== Icons ===== */
   icons: {
     icon: [
       { url: "/favicon.ico" },
@@ -58,7 +58,7 @@ export const metadata: Metadata = {
     apple: "/apple-touch-icon.png",
   },
 
-  /* ===== Open Graph ===== */
+  /* ===== Open Graph (Facebook, WhatsApp, Messenger, LinkedIn) ===== */
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -69,10 +69,10 @@ export const metadata: Metadata = {
       "Cybersecurity Engineer and Full-Stack Developer specializing in secure infrastructure, ethical hacking, and high-performance web applications.",
     images: [
       {
-        url: "https://www.georgekasmiro.site/og-image.jpg",
+        url: "https://www.georgekasmiro.site/og-facebook.jpg",
         width: 1200,
         height: 630,
-        alt: "George Kasmiro Portfolio",
+        alt: "George Kasmiro | Cybersecurity Engineer",
       },
     ],
   },
@@ -83,7 +83,7 @@ export const metadata: Metadata = {
     title: "George Kasmiro | Cybersecurity Engineer",
     description:
       "Cybersecurity Engineer & Full-Stack Developer focused on secure systems and modern web development.",
-    images: ["https://www.georgekasmiro.site/og-image.jpg"],
+    images: ["https://www.georgekasmiro.site/og-facebook.jpg"],
   },
 };
 
@@ -109,19 +109,15 @@ export default function RootLayout({
       <body
         className={`${inter.className} ${pacifico.variable} bg-[#0B1120] text-neutral-300 antialiased selection:bg-[#00D1FF]/30 selection:text-white`}
       >
-        {/* Navigation */}
         <Navbar />
 
-        {/* Main Content */}
         <main className="min-h-screen relative overflow-x-hidden">
           {children}
         </main>
 
-        {/* Footer */}
         <Footer />
         <FooterBottom />
 
-        {/* Ambient Cyber Background */}
         <div className="fixed inset-0 pointer-events-none z-[-1] overflow-hidden">
           <div className="absolute top-[-10%] left-[-5%] w-[40%] h-[40%] bg-[#00D1FF]/10 blur-[150px] rounded-full opacity-50" />
           <div className="absolute bottom-[-10%] right-[-5%] w-[40%] h-[40%] bg-[#00D1FF]/10 blur-[150px] rounded-full opacity-50" />
