@@ -33,27 +33,32 @@ export const metadata: Metadata = {
     "Ethical Hacking",
     "Penetration Testing",
     "Full Stack Developer",
-    "Next.js Portfolio",
     "Web Security",
+    "Next.js Portfolio",
   ],
   authors: [{ name: "George Kasmiro" }],
   creator: "George Kasmiro",
 
-  /* ===== Canonical & PWA ===== */
+  /* ===== Canonical ===== */
   alternates: {
     canonical: "https://www.georgekasmiro.site",
   },
+
+  /* ===== PWA ===== */
   manifest: "/site.webmanifest",
   themeColor: "#0B1120",
 
-  /* ===== Icons ===== */
+  /* ===== Icons (FULL FIX) ===== */
   icons: {
-    icon: "/favicon.ico",
-    shortcut: "/favicon.ico",
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/favicon-32x32.png", sizes: "32x32", type: "image/png" },
+      { url: "/favicon-16x16.png", sizes: "16x16", type: "image/png" },
+    ],
     apple: "/apple-touch-icon.png",
   },
 
-  /* ===== Open Graph (LinkedIn, WhatsApp, Facebook) ===== */
+  /* ===== Open Graph ===== */
   openGraph: {
     type: "website",
     locale: "en_US",
@@ -64,10 +69,10 @@ export const metadata: Metadata = {
       "Cybersecurity Engineer and Full-Stack Developer specializing in secure infrastructure, ethical hacking, and high-performance web applications.",
     images: [
       {
-        url: "/og-image.png",
+        url: "https://www.georgekasmiro.site/og-image.jpg",
         width: 1200,
         height: 630,
-        alt: "George Kasmiro | Cybersecurity Engineer Portfolio",
+        alt: "George Kasmiro Portfolio",
       },
     ],
   },
@@ -78,7 +83,7 @@ export const metadata: Metadata = {
     title: "George Kasmiro | Cybersecurity Engineer",
     description:
       "Cybersecurity Engineer & Full-Stack Developer focused on secure systems and modern web development.",
-    images: ["/og-image.png"],
+    images: ["https://www.georgekasmiro.site/og-image.jpg"],
   },
 };
 
@@ -86,9 +91,9 @@ export const metadata: Metadata = {
    3. Viewport
 ========================= */
 export const viewport: Viewport = {
-  themeColor: "#0B1120",
   width: "device-width",
   initialScale: 1,
+  themeColor: "#0B1120",
 };
 
 /* =========================
