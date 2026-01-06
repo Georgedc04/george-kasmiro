@@ -64,7 +64,7 @@ const Navbar = () => {
 
           <div className="flex flex-col">
             <span className="text-white tracking-tighter text-lg leading-none ">
-              <span className={pacifico.className}>Kasmiro</span>
+              <span className={pacifico.className}>George</span>
               <span className="text-[#00D1FF]">.</span>
             </span>
 
