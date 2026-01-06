@@ -18,7 +18,7 @@ const pacifico = Pacifico({
 });
 
 /* =========================
-   2. Metadata (SEO + PWA)
+   2. Metadata (SEO + PWA + OpenGraph)
 ========================= */
 export const metadata: Metadata = {
   title: {
@@ -26,50 +26,58 @@ export const metadata: Metadata = {
     template: "%s | George Kasmiro",
   },
   description:
-    "Portfolio of George Kasmiro, a Cybersecurity student and Full-Stack Developer specializing in secure infrastructure and multimedia design.",
+    "George Kasmiro is a Cybersecurity Engineer and Full-Stack Developer focused on secure systems, ethical hacking, and modern web technologies.",
   keywords: [
-    "Cybersecurity",
-    "Ethical Hacking",
-    "Full-Stack Developer",
     "George Kasmiro",
+    "Cybersecurity Engineer",
+    "Ethical Hacking",
     "Penetration Testing",
+    "Full Stack Developer",
     "Next.js Portfolio",
+    "Web Security",
   ],
   authors: [{ name: "George Kasmiro" }],
   creator: "George Kasmiro",
 
-  /* ===== Favicon & PWA ===== */
+  /* ===== Canonical & PWA ===== */
+  alternates: {
+    canonical: "https://www.georgekasmiro.site",
+  },
   manifest: "/site.webmanifest",
+  themeColor: "#0B1120",
+
+  /* ===== Icons ===== */
   icons: {
     icon: "/favicon.ico",
     shortcut: "/favicon.ico",
     apple: "/apple-touch-icon.png",
   },
-  themeColor: "#0B1120",
 
-  /* ===== OpenGraph ===== */
+  /* ===== Open Graph (LinkedIn, WhatsApp, Facebook) ===== */
   openGraph: {
     type: "website",
     locale: "en_US",
     url: "https://www.georgekasmiro.site",
     siteName: "George Kasmiro Portfolio",
-    title: "George Kasmiro | Cyber Sentinel",
-    description: "Securing the digital frontier through code and intelligence.",
+    title: "George Kasmiro | Cybersecurity Engineer & Developer",
+    description:
+      "Cybersecurity Engineer and Full-Stack Developer specializing in secure infrastructure, ethical hacking, and high-performance web applications.",
     images: [
       {
         url: "/og-image.png",
         width: 1200,
         height: 630,
-        alt: "George Kasmiro Portfolio Preview",
+        alt: "George Kasmiro | Cybersecurity Engineer Portfolio",
       },
     ],
   },
 
-  /* ===== Twitter ===== */
+  /* ===== Twitter / X ===== */
   twitter: {
     card: "summary_large_image",
     title: "George Kasmiro | Cybersecurity Engineer",
-    description: "B.Tech Computer Science & Cybersecurity student.",
+    description:
+      "Cybersecurity Engineer & Full-Stack Developer focused on secure systems and modern web development.",
     images: ["/og-image.png"],
   },
 };
