@@ -1,7 +1,7 @@
 import Title from "./Title";
-import ProjectsCard from "./ProjectsCard";
-import { at, ip, mat, project4, projectOne,  pw } from "../assets";
+
 import { FadeIn } from "./FadeIn";
+import ProjectsCard from "./ProjectsCard";
 
 const Projects = () => {
   return (
@@ -16,37 +16,37 @@ const Projects = () => {
             des="My Projects"
           />
         </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
           <ProjectsCard
             title="Trading Dashboard"
             des="A real-time trading dashboard providing market insights, trends, and analytics."
-            src="images/prjects/projectOne"
-          />
+            src="/assets/projectOne.png" id={""}          />
+
           <ProjectsCard
             title="Portfolio Website"
             des="A personal website showcasing projects, skills, and experience in design and development."
-            src={pw}
-          />
+            src="/assets/pw.png" id={""}          />
+
           <ProjectsCard
             title="Cryptocurrency Tracker"
             des="An app to monitor cryptocurrency prices, news, and trading opportunities."
-            src={project4}
-          />
+            src="/assets/project4.png" id={""}          />
+
           <ProjectsCard
             title="Investment Planner"
             des="Tool to help users plan and track investments for better financial decisions."
-            src={ip}
-          />
+            src="/assets/ip.png" id={""}          />
+
           <ProjectsCard
             title="Market Analysis Tool"
             des="An advanced tool offering technical indicators and charts for informed trading."
-            src={mat}
-          />
+            src="/assets/mat.png" id={""}          />
+
           <ProjectsCard
             title="Automated Trading Bot"
             des="A bot that executes trades automatically based on predefined strategies."
-            src={at}
-          />
+            src="/assets/at.png" id={""}          />
         </div>
       </FadeIn>
     </section>
